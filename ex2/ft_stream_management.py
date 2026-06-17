@@ -23,8 +23,8 @@ def read_archive(fname: str) -> str | None:
     try:
         file = open(fname, "r")
         content = file.read()
-        print("---")
-        print(content, end="")
+        print("---\n")
+        print(content)
         print("---")
         file.close()
         print(f"File '{fname}' closed.")
@@ -67,8 +67,8 @@ def main() -> None:
         return
     new_content = add_archive_character(content)
     print("Transform data:")
-    print("---")
-    print(new_content, end="")
+    print("---\n")
+    print(new_content)
     print("---")
     new_fname = ask_output_file()
     if new_fname == "":
