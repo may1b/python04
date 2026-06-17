@@ -23,9 +23,9 @@ def read_archive(fname: str) -> str | None:
     try:
         file = open(fname, "r")
         content = file.read()
-        print("--")
+        print("---")
         print(content, end="")
-        print("--")
+        print("---")
         file.close()
         print(f"File '{fname}' closed.")
         return content
@@ -67,9 +67,9 @@ def main() -> None:
         return
     new_content = add_archive_character(content)
     print("Transform data:")
-    print("--")
+    print("---")
     print(new_content, end="")
-    print("--")
+    print("---")
     new_fname = ask_output_file()
     if new_fname == "":
         print("Not saving data.")

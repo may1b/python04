@@ -14,7 +14,7 @@ def main() -> None:
         print(file.read())
         print("---")
         file.close()
-        print(f"File {fname} closed.")
+        print(f"File '{fname}' closed.")
     except Exception as err:
         print(f"Error opening file '{fname}': {err}")
         return
